@@ -1,23 +1,17 @@
-    import random
-    from time import monotonic
+# Функция сортировки
 
+'''
 
-    def sort(list):
-      for i in range(1, len(list)):
-        num = list[i]
-        j = i -1
-        while j >= 0 and num < list[j]:
-          list[j+1] = list[j]
-          j -= 1
-        list[j+1] = num
-      return(list)
+def sort(list):
+  for i in range(1, len(list)):
+    num = list[i]
+    j = i -1
+    while j >= 0 and num < list[j]:
+      list[j+1] = list[j]
+      j -= 1
+    list[j+1] = num
+  return(list)
 
+'''
 
-    start = monotonic()
-    list = []
-    for x in range(0, 10):
-      list.append(random.randint(0, 9))
-    sort(list)
-    print(list)
-    finish = monotonic()
-    print(round(finish - start, 4))
+Поочереди берётся каждый эллемент списка, начиная со второго.
