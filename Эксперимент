@@ -1,6 +1,6 @@
 # Функция сортировки
 
-'''
+...
 
 def sort(list):
   for i in range(1, len(list)):
@@ -12,6 +12,6 @@ def sort(list):
     list[j+1] = num
   return(list)
 
-'''
+...
 
 Поочереди берётся каждый эллемент списка, начиная со второго.
